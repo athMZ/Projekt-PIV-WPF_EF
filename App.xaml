@@ -1,0 +1,69 @@
+﻿<Application x:Class="Projekt_WPF_EF_PraktykiStudenckie.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Projekt_WPF_EF_PraktykiStudenckie"
+             StartupUri="/View/MainWindow.xaml">
+    <Application.Resources>
+
+        <SolidColorBrush x:Key="BackgroundColor" Color="#1E1E1E"/>
+        <SolidColorBrush x:Key="Btn1" Color="#9264cd"/>
+        <SolidColorBrush x:Key="FontMainColor" Color="#EFEFEF"/>
+        <SolidColorBrush x:Key="FontDark" Color="#1E1E1E"/>
+        <SolidColorBrush x:Key="SuccessColor" Color="#9ae69a"/>
+        <SolidColorBrush x:Key="DeleteColor" Color="#c85961"/>
+
+        <Style TargetType="Window" x:Key="BasicWindow">
+            <Setter Property="Background" Value="{StaticResource BackgroundColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource FontMainColor}"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="LabelH1">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="{StaticResource FontMainColor}"/>
+        </Style>
+
+        <Style TargetType="Label" x:Key="LabelP">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value=" 0 0 2 0"/>
+            <Setter Property="Foreground" Value="{StaticResource FontMainColor}"/>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="TextBox">
+            <Setter Property="MaxWidth" Value="200"/>
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Margin" Value="2 0 0 0"/>
+            <Setter Property="Padding" Value="2"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="InsertButton">
+            <Setter Property="MaxWidth" Value="400" />
+            <Setter Property="Padding" Value="10 5 10 5" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Background" Value="{StaticResource SuccessColor}"/>
+            <Setter Property="Foreground" Value="{StaticResource FontDark}"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="UpdateButton">
+            <Setter Property="MaxWidth" Value="200" />
+            <Setter Property="Padding" Value="10 5 10 5" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="{StaticResource Btn1}"/>
+            <Setter Property="Foreground" Value="{StaticResource FontMainColor}"/>
+        </Style>
+
+        <Style x:Key="BasicControl" TargetType="UserControl" >
+            <Setter Property="Background" Value="{StaticResource BackgroundColor}" />
+
+        </Style>
+
+    </Application.Resources>
+</Application>
